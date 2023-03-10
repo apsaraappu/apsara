@@ -1,0 +1,227 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+/* DESKTOP BANNER */
+.desktopBanner{
+    position: relative;
+    overflow: hidden;
+}
+.desktopBanner>video{
+    width: 100%;
+}
+.desktopBanner>header{
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+.desktopBanner>header>nav{
+    margin: 1px;
+    background: linear-gradient(rgba(124, 43, 80, 0.5),rgba(31, 42, 31, 0.5));
+    padding: 1px;
+    border-radius: 5px;
+}
+.desktopBanner>header>nav>ul{
+    list-style-type: none;
+    float: right;
+}
+.desktopBanner>header>nav>ul>li{
+    display: inline-block;
+    padding: 25px;
+}
+.desktopBanner>header>nav>ul>li:hover{
+    background-color: #fff;
+}
+
+.desktopBanner>header>nav>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+.desktopBanner>header>nav>ul>li:hover a{
+    background-color: red;
+}
+.desktopBanner>h1{
+    position: absolute;
+    top:50%;
+    left: 22%;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px #000;
+    color: #fff;
+    transition: 1s;
+}
+.desktopBanner>h1:hover{
+    transform:scale(1.1);
+}
+/* MEDAI SCREEN */
+.tabbanner,.mobbanner{
+    display: none;
+}
+/* Karnataka District List */
+.KarDistrictlist{
+    text-align: center;
+}
+.KarDistrictlist>h1,.KarInfo>h1,.feedback>h1{
+    margin: 50px auto;
+    font-size: 30px;
+    transition: 1s;
+    color: #fff;
+    text-shadow: -1px -1px 2px #000, 3px 3px 3px #000;
+    text-align: center;
+}
+.KarDistrictlist>h1:hover, .KarInfo>h1:hover,.feedback>h1:hover{
+    transform: scale(1.1);
+}
+.KarDistrictlist>ul{
+    list-style-type: none;
+}
+.KarDistrictlist>ul>li{
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0/ 24%)0px 3px 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+.KarDistrictlist>ul>li:hover{
+    animation: karnataka 5s infinite;
+}
+@keyframes karnataka {
+    from{
+        background: url(../images/karnataka.webp)no-repeat top;
+        background-size: 100%;
+        color: red;
+    }
+    to{
+        background: url(../images/karnataka.webp)no-repeat bottom;
+        background-size: 100%;
+        color: yellow;
+    }
+}
+/* Karnataka Info */
+.KarInfo>div{
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+.KarInfo>h1{
+    text-align: center;
+}
+.KarInfo>div>p{
+    padding: 20px;
+    text-align: justify;
+    line-height: 2;
+    text-indent: 50px;
+    margin-bottom: 20px;
+}
+.KarInfo>div>p:last-child{
+    margin-bottom: 0px;
+}
+/* FEEDBACK */
+.feedback{
+    background: linear-gradient(rgb(255, 165, 0,0.4),rgb(252, 2, 2,0.4),rgb(0, 128, 0,0.4)),url(../images/bihu.jpg) no-repeat center;
+    background-size: cover;
+    padding: 50px;
+    background-attachment: fixed;
+}
+.feedback>form>label{
+    font-weight: bold;
+    color: #fff;
+}
+.feedback>form>label>span{
+    color: red;
+}
+.feedback>form>input, .feedback>form>textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+
+}
+
+.feedback>form>input:focus-visible, .feedback>form>textarea:focus-visible{
+    outline: 5px solid green;
+    border: none;
+}
+.feedback>form>button{
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+.feedback>form> [type="submit"]{
+    background-color: skyblue;
+}
+.feedback>form> [type="button"]{
+    background-color: rgb(46, 41, 10);
+}
+.KarDistrictlist, .KarInfo, .feedback{overflow: hidden;}
+/*footer*/
+footer{
+    background: linear-gradient(to right, #141e30, #243b58);
+    padding: 100px;
+    text-align: center;
+    color: aliceblue;
+}
+footer>p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.fa-square-youtube, .fa-square-instagram, .fa-square-facebook, .fa-square-whatsapp{
+    transition: 1s;
+    margin: 10px;
+}
+.fa-square-youtube:hover, .fa-square-instagram:hover, .fa-square-facebook:hover, .fa-square-whatsapp:hover{
+    transform: scale(2.2);
+}
+/*CSS GRID CLASSES*/
+.col1{
+    width: 8.33%;
+}
+.col2{
+    width: 16.66%;
+}
+.col3{
+    width: 25%;
+}
+.col4{
+    width: 33.33%;
+}
+.col5{
+    width: 41.66%;
+}
+.col6{
+    width: 50%;
+}
+.col7{
+    width: 58.33%;
+}
+.col8{
+    width: 66.66%;
+}
+
+.col9{
+    width: 75%;
+}
+.col10{
+    width: 83.33%;
+}
+.col11{
+    width: 91.66%;
+}
+.col12{
+    width: 100%;
+}
+/*.colection{}*/
+[class*="col"]{
+    float: left;
+    padding: 10px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}

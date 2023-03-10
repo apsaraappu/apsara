@@ -1,0 +1,88 @@
+/*MOBILE*/
+@media(max-width:768px){
+    .desktopBanner,.tabbanner{
+        display: none;
+    }
+    .mobbanner{
+        display: block;
+        position: relative;
+    }
+    .mobbanner>header{
+        background: linear-gradient(to right, #159957, #155799);
+        padding: 10px;
+    }
+    .mobbanner>header>nav{
+        text-align: center;
+    }
+    .mobbanner>header>nav>ul{
+        list-style-type: none;
+    }
+    .mobbanner>header>nav>ul>li{
+        padding: 20px;
+    }
+    .mobbanner>header>nav>ul>li:hover{
+        background: linear-gradient(rgba(146, 25, 25, 0.5),rgba(212, 139, 139, 0.5));
+    }
+    .mobbanner>header>nav>ul>li>a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .mobbanner>video{
+        width: 100%;
+    }
+    .mobbanner>h1{
+        position: absolute;
+        font-size: 55px;
+        top:70%;
+        left: 20px;
+        color: #159957;
+        text-shadow: 2px 2px 2px #000;
+    }
+}
+/*tab*/
+@media(min-width:769px) and (max-width:1200px){
+    .desktopBanner,.mobbanner{
+        display: none;
+    }
+.tabbanner{
+display: block;
+overflow: hidden;
+position: relative;
+}
+}
+.tabbanner>header{
+    background-color: linear-gradient(to right, #2193b0,#6dd5ed);
+    padding: 10px;
+}
+.tabbanner>header>nav{
+    text-align: center;
+}
+.tabbanner>header>nav>ul{
+    list-style-type: none;
+}
+.tabbanner>header>nav>ul>li{
+display: inline-block;
+padding: 20px;
+border-radius: 2px;
+}
+.tabbanner>header>nav>ul>li:hover{
+    background: #fff;
+}
+.tabbanner>header>nav>ul>li:hover:a{
+    color: #2193b0;
+}
+.tabbanner>header>nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+.tabbanner>video{
+width: 100%;
+}
+.tabbanner>h1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 3px 3px 2px green;
+}
